@@ -1,5 +1,9 @@
 # Amazon ATDD Kata
 ----------------
+
+This is a code kata written for teams that want to practice interacting with Cheezy's pageObject gem. 
+
+
 ## Feature #1 – Browse Homepage
 
 As a customer, I want to be able to browse Amazon’s homepage so I can see what products are available to sell
