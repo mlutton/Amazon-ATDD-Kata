@@ -22,11 +22,6 @@ Tip: First try doing this with just the simple browser object. Then try this usi
 As a customer, I want to be able to view a specific product so I can evaluate if I want to buy it
 
 <pre>
-Scenario: Selecting Product
-	Given I am on the Amazon Homepage
-	When I select a product
-	Then I should be presented its details
-
 Scenario: Product Details Should Include Key Fields
 	When I am on a product detail page
 	Then I should see a price, description, and reviews
@@ -56,7 +51,7 @@ Scenario: Searching For Valid Product Should Return Results
 Scenario: Search For Valid Product Should Display The Search Term
 	Given I am on the Amazon Homepage
 	When I search for a valid product
-	Then I should see the term search for
+	Then I should see the term searched for
 </pre>
 
 
