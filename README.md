@@ -23,12 +23,12 @@ As a customer, I want to be able to view a specific product so I can evaluate if
 
 <pre>
 Scenario: Selecting Product
-	Given I’m on Amazon's homepage
+	Given I am on the Amazon Homepage
 	When I select a product
 	Then I should be presented its details
 
 Scenario: Product Details Should Include Key Fields
-	When I’m on a product detail page
+	When I am on a product detail page
 	Then I should see a price, description, and reviews
 </pre>
 
@@ -38,7 +38,7 @@ As a customer, I want to get feedback if I search for an invalid product
 
 <pre>
 Scenario: Searching For Invalid Products
-	Given I’m on Amazon's homepage
+	Given I am on the Amazon Homepage
 	When I search for an invalid product
 	Then I should receive a message stating no products were returned
 </pre>
@@ -49,12 +49,12 @@ As a customer, I want to see all products that match the search criteria so that
 
 <pre>
 Scenario: Searching For Valid Product Should Return Results
-	Given I’m on Amazon's homepage
+	Given I am on the Amazon Homepage
 	When I search for a valid product
 	Then I should see a list of products
 	
 Scenario: Search For Valid Product Should Display The Search Term
-	Given I’m on Amazon's homepage
+	Given I am on the Amazon Homepage
 	When I search for a valid product
 	Then I should see the term search for
 </pre>
