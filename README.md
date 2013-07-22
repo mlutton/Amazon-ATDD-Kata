@@ -3,6 +3,7 @@
 
 This is a code kata written for teams that want to practice interacting with Cheezy's pageObject gem. 
 
+Tip: Remember to use test gen to create your initial project structure.
 
 ## Feature #1 – Browse Homepage
 
@@ -13,6 +14,8 @@ Scenario: Browse Homepage
   When I browse the homepage
   Then I should see a list of available products
 </pre>
+
+Tip: First try doing this with just the simple browser object. Then try this using Cheezy's page object.
 
 ## Feature #2 – Select Product
 
