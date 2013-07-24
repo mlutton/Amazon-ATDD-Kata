@@ -22,5 +22,17 @@ When(/^I search for an invalid product$/) do
   end
 end
 Then(/^I should receive a message stating no products were returned$/) do
-  on(AmazonHomePage).noResultsText?.should be_true
+  on(ProductSearchResults).noResultsText?.should be_true
+end
+When(/^I search for a valid product$/) do
+  on(AmazonHomePage) do |page|
+    page.searchInputBox = 'Kindle'
+    page.goButton
+  end
+end
+Then(/^I should see a list of products$/) do
+  on(ProductSearchResults).searchResult?.should be_true
+end
+Then(/^I should see the term searched for$/) do
+  on(ProductSearchResults).searchTerm?.should be_true
 end

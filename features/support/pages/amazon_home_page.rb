@@ -5,5 +5,4 @@ class AmazonHomePage
 
   text_field(:searchInputBox, :id => 'twotabsearchtextbox')
   button(:goButton, :class => 'nav-submit-input')
-  span(:noResultsText, :class => 'noResultsTitleKeyword')
 end
