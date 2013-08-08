@@ -17,7 +17,7 @@ Scenario: Browse Homepage
 
 Tip: First try doing this with just the simple browser object. Then try this using Cheezy's page object.
 
-## Feature #2 – Select Product
+## Feature #2 – View A Product
 
 As a customer, I want to be able to view a specific product so I can evaluate if I want to buy it
 
